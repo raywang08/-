@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task_1_1_1</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="raywang08">
+</head>
+<body>
+<h1>网站一级标题</h1>
+<ul>
+	<li><a href="wwww.baidu.com">导航链接1</a></li>
+	<li><a href="www.baidu.com">导航链接2</a></li>
+	<li><a href="www.baidu.com">导航链接3</a></li>
+	<li><a href="www.baidu.com">导航链接4</a></li>
+</ul>
+<div id="paper1">
+	<h2>文章一级标题</h2>
+	<h3>文章二级标题</h3>
+	<p>文章作者&nbsp文章发表时间</p>
+	<p>这是一段很长的段落，这是一段很长的段落，这是一段很长的段落这是一段很长的段落，这是一段很长的段落，这是一段很长的段落，这是一段很长的段落。</p><br>
+    <p>这是一段很长的段落,这是一段很长的段落,这是一段很长的段落这是一段很长的段落,这是一段很长的段落,这是一段很长的段落,这是一段很长的段落</p><br>
+	<p>这是一段很长的段落,这是一段很长的段落,<a href="ife.baid.com" alt="前端学院" title="前端学院">这里有一个链接链接到http://itf.baidu.com</a>这是一段很长的段落,这是一段很长的段落,<strong>这里有个粗体</strong>这是一段很长的段落,这是一段很长的段落,这是一段很长的段落,这是一段很长的段落。</p>
+	<img src="images/hefei.jpg" width="300" height="200">
+	<ul>
+		<li>列表项目一</li>
+		<li>列表项目二</li>
+		<li>列表项目三</li>
+	</ul>
+</div>
+<div id="photo">
+	<h2>图片</h2>
+	好看的图片<img src="images/hefei.jpg" width="300" height="200"><br>
+	好看的图片<img src="images/hefei.jpg" width="300" height="200"><br>
+	好看的图片<img src="images/hefei.jpg" width="300" height="200"><br>
+	好看的图片<img src="images/hefei.jpg" width="300" height="200"><br>
+	好看的图片<img src="images/hefei.jpg" width="300" height="200"><br>
+</div>
+<div id="paper2">
+	<h2>最后一篇文章一级标题</h2>
+	<h3>文章二级标题</h3>
+	<p>文章作者&nbsp文章标题</p>
+	<ol>
+		<li>排名一</li>
+		<li>排名二</li>
+		<li>排名三</li>
+	</ol>
+	<p>下面是一个表格，给表格加一个border=“1”好让看出来是一个表格</p>
+	<table border="1">
+		<tr>
+			<th>表头</th>
+			<th>表头</th>
+			<th>表头</th>
+		</tr>
+		<tr>
+			<td>表内单元格</td>
+			<td>表内单元格</td>
+			<td><a href="#">操作</a></td>
+		</tr>
+		<tr>
+			<td>表内单元格</td>
+			<td>表内单元格</td>
+			<td><a href="#">操作</a></td>
+		</tr>
+		<tr>
+			<td>表内单元格</td>
+			<td>表内单元格</td>
+			<td><a href="#">操作</a></td>
+		</tr>
+		<tr>
+			<td>表内单元格</td>
+			<td>表内单元格</td>
+			<td><a href="#">操作</a></td>
+		</tr>
+		<tr>
+			<td>总计</td>
+			<td colspan="2">1000</td><!--表格跨行和跨列 colspan rowspan-->
+		</tr>
+	</table>
+</div>
+<div id="bar">
+	<h2>这里以后是个侧栏，这是侧栏的标题</h2>
+	<h3>侧栏注册窗口标题</h3>
+	<form action="save.php" method="post"><!--get和post分别是发送数据的两种方式，post是首选的方式可支持大数据-->
+	     <p>
+	     	<label for="mail">请输入邮箱地址：</label>
+	     	<input type="text" name="mail" id="mail" value="这是一个文本输入框" min="6" max="16"><!--for和id名称一样表示相关联 限制位数-->
+	     	<br> 邮箱地址请按要求格式输入
+	     </p>
+	     <p>
+	     	<label for="pwd">请输入密码</label>
+	     	<input type="text" name="pwd" id="pwd" value="这是一个文本输入框">
+	     	<label for="rpwd">请重复输入密码</label>
+	     	<input type="text" name="pwd" id="rpwd" value="这是一个文本输入框">
+	     	<br>密码请为6-16位英文数字
+	     </p>
+	     <p>
+	     	<label for="nv">性别：</label>
+	     	<input type="radio" name="gender" id="nv" value="男">男
+	     	<input type="radio" name="gender" id="nv" value="女">女
+	     </p>
+	     <p>城市：
+	     	<select>
+	     		<option selected>北京</option>
+	     		<option>上海</option>
+	     		<option>广州</option>
+	     	</select>
+	     </p>
+	     <p>爱好：
+	     	 <input type="checkbox" name="hobby">运动
+	     	 <input type="checkbox" name="hobby">艺术
+	     	 <input type="checkbox" name="hobby">科学
+	     </p>
+	     <p>
+	     	个人描述：
+	     	<textarea cols="20" rows="6"></textarea>
+	     	<input type="sumit" name="sumit" value="确认提交">
+	     </p>
+	</form>
+</div>
+</body>
+</html>
