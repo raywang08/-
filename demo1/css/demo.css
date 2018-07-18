@@ -1,0 +1,386 @@
+* {                           /*全局属性*/
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	color: #62A6E3;
+	font-weight: 400;
+	font-size: 50px;	
+}
+a {                      
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+.header {                     /*头部*/
+	position: relative;
+	width: 1440px;
+	height: 130px;
+}
+.topnav {
+	height: 35px;
+	background-color: #01559D;
+	box-sizing: border-box;
+}
+.tel {
+	margin-left: 230px;
+	line-height: 35px;
+	font-size: 18px;
+	color: #5381BD;
+}
+.tel > img {
+	margin-top: 5px;          /*调整位置，使其垂直居中*/
+	float: left;
+	padding-right: 6px;       /*让与右边文本留有一定间距*/
+}
+.login {
+	position: absolute;
+	left: 1020px;
+	top: 10px;
+	border-right: 1px #5381BD solid;
+}
+.regsiter {
+	position: absolute;
+	left: 1085px;
+	top: 10px
+}
+.weibo {
+	position: absolute;
+	left: 1140px;
+	top: 10px;
+}
+.tencent {
+	position: absolute;
+	left: 1168px;
+	top: 10px;
+}
+.wechat {
+	position: absolute;
+	left: 1190px;
+	top: 10px;
+}
+.login span , .regsiter span {
+	color: #5381BD;
+	padding-right: 8px;
+}
+.login img ,.regsiter img {
+	margin-right: 8px;
+	margin-bottom: -2px;      /*让logo与右边文字平行，默认不平行*/
+}
+.logo {
+	position: absolute;
+	left: 230px;
+	height: 95px;
+	width: 310px;
+	line-height: 95px;
+	background: url(../images/就去哪_.png) no-repeat 100% 70%;
+}
+.mainnav-ul {
+	position: absolute;
+	top: 35px;
+	left: 655px;
+	height: 95px;
+	box-sizing: border-box;
+}
+.mainnav-ul li {
+	display: inline-block;
+}
+.mainnav-ul li a {
+	color: #646464;
+	font-size: 16px;
+}
+.mainnav-ul li {
+	padding-top: 50px;
+	height: 95px;
+	width: 90px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.mainnav-ul li:nth-of-type(1) {
+	background: url(../images/home.png) no-repeat center 30%;
+}
+.mainnav-ul li:nth-of-type(2) {
+	background: url(../images/船.png) no-repeat center 30%;
+}
+.mainnav-ul li:nth-of-type(3) {
+	background: url(../images/飞机.png) no-repeat center 30%;
+}
+.mainnav-ul li:nth-of-type(4) {
+	background: url(../images/城堡.png) no-repeat center 30%;
+}
+.mainnav-ul li:nth-of-type(5) {
+	background: url(../images/城镇.png) no-repeat center 30%;
+}
+.mainnav-ul li:nth-of-type(1):hover {   
+	background-color: #26A9E1;      /*因为li加了背景图片所以悬停背景颜色变化必须一个个写出来，不可以直接写.mainnav-ul li:hover {*/    
+}
+.mainnav-ul li:nth-of-type(2):hover {
+	background-color: #26A9E1; 
+}
+.mainnav-ul li:nth-of-type(3):hover {
+	background-color: #26A9E1; 
+}
+.mainnav-ul li:nth-of-type(4):hover {
+	background-color: #26A9E1; 
+}
+.mainnav-ul li:nth-of-type(5):hover {
+	background-color: #26A9E1; 
+}
+.mainnav-ul li:hover a {
+	color: #FFF;             /*li悬停时，可以同时让li嵌套的子元素a也有颜色变化*/
+}
+.banner {
+	position: relative;
+	height: 466px;
+	width: 1440px;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 1px 1px 10px #808080,
+	             2px 2px 10px #808080;
+	color: #FFF;
+}
+.product {
+	position: absolute;
+	left: 370px;
+	top: 120px;
+}
+.product a:nth-of-type(1) {
+	display: inline-block;
+	margin: 70px 12px 100px 80px;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background: url(../images/airplane.png) no-repeat center;
+	background-color: #EE8379;  /*要想背景颜色和图片同时显示，颜色必须在图片之后，否则只有图片显示,或者颜色直接一起写进bgc里亦可*/
+}
+.product a:nth-of-type(2) {
+	display: inline-block;
+	margin: 70px 12px 100px 0;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background: #AE946F url(../images/people.png) no-repeat center;
+}
+.product a:nth-of-type(3) {
+	display: inline-block;
+	margin: 70px 12px 100px 0;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background: #FEA000 url(../images/tree.png) no-repeat center;                                   
+}
+.product a:nth-of-type(4) {
+	display: inline-block;
+	margin: 70px 12px 100px 0;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background-color: #53A9B6;
+	background: #53A9B6 url(../images/people1.png) no-repeat center;
+}
+.product a:nth-of-type(5) {
+	display: inline-block;
+	margin: 70px 12px 100px 0;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background: #748CC8 url(../images/boat.png) no-repeat center;
+}
+.container {
+	height: 1400px;
+	width: 1440px;
+	padding-top: 70px;  
+	border-top: 2px #F0E68C dotted;
+	background-color: #F3F3F3;
+}
+.subnav {
+	position: relative;
+	margin: 0 auto;
+	width: 980px;
+	height: 167px;
+}
+.CHN {
+	color: #95C056;
+	font-size: 30px;
+}
+.EN {
+	color: #929292;
+	font-size: 19px;
+}
+.more a {
+	color: #2BA8E2;
+	font-size: 18px;
+}
+.sub-item1 {
+	margin-left: 10px;
+}
+.sub-item1 img:nth-of-type(1) {
+	float: left;
+	margin-right: 10px;
+}
+.sub-item1 img:nth-of-type(2) {
+	position: absolute;
+	left: 390px;
+	top: 60px;
+}
+.sub-item1 p:nth-of-type(3) {
+	position: absolute;
+	left: 650px;
+	top: 85px;
+}
+.sub-item1 img:nth-of-type(3) {
+	position: absolute;
+	left: 650px;
+	top: 0;
+	z-index: 1;
+}
+.sub-item1 img:nth-of-type(4) {
+	position: absolute;
+	left: 785px;
+	top: -15px;
+	z-index: 0;
+}
+.subnav-ul {
+	margin-top: 12px;
+}
+.subnav-ul li {
+	display: inline-block;
+	height: 28px;
+	width: 70px;
+	text-align: center;
+	line-height: 28px;
+	background-color: #CCC;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+.subnav-ul li a {
+	color: #000;
+}
+.subnav-ul li:hover {
+	background-color: #95C056;
+}
+.subnav-ul li:hover a {
+	color: #FFF;
+}
+.sub-item2 {
+	margin-top: 17px;
+	height: 45px;
+	width: 980px;
+	background-color: #26A9E1;
+}
+.sub-item2 ul {
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+}
+.sub-item2 ul li {
+	display: inline-block;
+	height: 25px;
+	width: 70px;
+	text-align: center;
+	line-height: 25px;
+}
+.sub-item2 ul li a {
+	color: #FFF;
+	font-size: 15px;
+}
+.sub-item2 ul li:hover {
+	background-color: #275FA5;
+	border-radius: 5px;
+}
+.main {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 30px 10px 0;
+	width: 980px;
+	height: 1193px;
+	background-color: #FFF;
+	box-sizing: border-box;
+}
+.item {
+	height: 230px;
+} 
+.item p {                  /*让文字不换行超出宽度省略号显示*/
+	width: 198px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.item-name {
+	margin: 10px 0;
+	color: #2BA8E2;
+	font-size: 14px;
+	text-align: center;
+}
+.photo {
+	padding: 2px;
+	border: 1px #DCDCDC solid;
+}
+.item-price {
+	margin-bottom: 10px;
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+}
+.price {
+	color: #FF0000;
+}
+.item-evaluation {
+	color: #969696;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+}
+.item-evaluation img {
+	margin: 5px 2px 0 0;
+}
+.item-evaluation  span {
+	display: inline-block;
+	padding-left: 2px;
+	width: 25px;
+	height: 15px;
+	color: #FFF;
+	font-size: 12px;
+	text-align: center;
+	line-height: 15px;
+	background-color: #FFA200;
+	box-sizing: border-box;
+}
+.footer {
+	position: relative;
+	width: 1440px;
+	height: 130px;
+	background-color: #26A8E1;
+}
+.footer div {
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 980px;
+	height: inherit;
+	color: #FFF;
+	font-size: 10px;
+	box-sizing: border-box;
+	background: url(../images/erweima1.png) no-repeat 88% center,
+	            url(../images/erweima2.png) no-repeat right center;
+}
+.footer div ul li {
+	display: inline-block;
+	padding-right: 5px;
+	width: 50px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	border-right: 1px solid #FFF;
+}
+.footer div ul li:nth-of-type(4) {
+	border: 0;
+}
+.footer div p {
+	margin: 10px 0 0 0;
+}
+.footer a {
+	color: #FFF;
+}
